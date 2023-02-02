@@ -4,6 +4,8 @@ import audiophile from "./images/client-audiophile.svg"
 import databiz from "./images/client-databiz.svg"
 import maker from "./images/client-maker.svg"
 import meet from "./images/client-meet.svg"
+import logo from "./images/logo.svg"
+import Header from "./Header"
 
 
 function App() {
@@ -11,6 +13,18 @@ function App() {
  <>
 
  <section className = "flex flex-col-reverse py-20 md:grid md:gap-10 md:grid-cols-2 md:place-items-center max-w-4xl lg:max-w-5xl md:mx-auto">
+
+  <header>
+    
+
+    <ul>
+      <li>Features</li>
+      <li>Company</li>
+      <li>Careers</li>
+      <li>About</li>
+      <li></li>
+    </ul>
+  </header>
 
   <article className="text-center md:text-left px-5 xl:px-0 mt-10 md:mt-0">
       <h1 className ="font-bold text-4xl lg:text-6xl xl:text-7xl mb-5">Make remote work</h1>
@@ -23,22 +37,22 @@ function App() {
     ">Learn More
     </button>
 
-  <ul className="grid grid-cols-4 gap-1">
+  <ul className="grid grid-cols-4 gap-1 mt-10 place-items-center md:place-items-start">
     <li>
-      <img src={databiz} alt="" className="pt-5"/>
+      <img src={databiz} alt="logo" className="w-16"/>
     </li>
 
     <li>
-    <img src={audiophile} alt=""className = "pt-5" />
+    <img src={audiophile} alt="logo"className = "w-16" />
     </li>
 
     <li>
-    <img src={meet} alt="" className = "pt-5" />
+    <img src={meet} alt="logo" className = "w-18" />
     </li>
 
 
     <li>
-    <img src={maker} alt="" className = "pt-5"/>
+    <img src={maker} alt="logo" className = "w-16"/>
     </li>
     
 
