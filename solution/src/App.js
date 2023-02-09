@@ -5,7 +5,10 @@ import databiz from "./images/client-databiz.svg"
 import maker from "./images/client-maker.svg"
 import meet from "./images/client-meet.svg"
 import logo from "./images/logo.svg"
-import Header from "./Header"
+import chevronDown from "./images/icon-arrow-down.svg"
+import menuOpen from "./images/icon-menu.svg"
+
+
 
 
 function App() {
@@ -14,16 +17,38 @@ function App() {
 
  <section className = "flex flex-col-reverse py-20 md:grid md:gap-10 md:grid-cols-2 md:place-items-center max-w-4xl lg:max-w-5xl md:mx-auto">
 
-  <header>
+  <header className="p-5">
     
+<div>
+  <img src={logo} alt="logo"/>
+</div>
 
-    <ul>
-      <li>Features</li>
-      <li>Company</li>
-      <li>Careers</li>
-      <li>About</li>
-      <li></li>
-    </ul>
+<nav>
+    <div>
+      <button>Features  <img src={chevronDown} alt ="chev"/> </button>
+    </div>
+      <div>
+        <button>Company  <img src={chevronDown} alt ="chev"/></button>
+      </div>
+      <div>
+        <button>Careers</button>
+        </div>
+     <div>
+      <button>About</button>
+      </div> 
+
+</nav>
+
+<div>
+  <button>
+    <img src={menuOpen} alt="" />
+  </button>
+</div>
+<div className="hidden lg:block">
+  <button>Login</button>
+  <button>Sign Up</button>
+</div>
+  
   </header>
 
   <article className="text-center md:text-left px-5 xl:px-0 mt-10 md:mt-0">
