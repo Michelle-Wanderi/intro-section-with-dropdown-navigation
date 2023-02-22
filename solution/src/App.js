@@ -12,18 +12,25 @@ import menuOpen from "./images/icon-menu.svg"
 
 
 function App() {
+
+  const handleOpenMenu = () => {
+    const navbar = document.querySelector(".navbar")
+
+    navbar.classList.toggle("open")
+  }
   return (
  <>
 
  <section className = "flex flex-col-reverse py-20 md:grid md:gap-10 md:grid-cols-2 md:place-items-center max-w-4xl lg:max-w-5xl md:mx-auto">
 
-  <header className="p-5">
+  <header className="p-5 flex items-center
+  justify-between">
     
 <div>
   <img src={logo} alt="logo"/>
 </div>
 
-<nav>
+<nav className="navbar open">
     <div>
       <button>Features  <img src={chevronDown} alt ="chev"/> </button>
     </div>
